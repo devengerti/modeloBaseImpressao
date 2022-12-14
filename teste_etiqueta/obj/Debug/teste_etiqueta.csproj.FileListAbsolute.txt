@@ -1,0 +1,16 @@
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\teste_etiqueta.exe.config
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\teste_etiqueta.exe
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\teste_etiqueta.pdb
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\LATROMI.Extensions.Logging.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\System.Memory.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\System.Buffers.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.csproj.AssemblyReference.cache
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.Form1.resources
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.Properties.Resources.resources
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.csproj.GenerateResource.cache
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.csproj.CoreCompileInputs.cache
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.csproj.CopyComplete
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.exe
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.pdb
