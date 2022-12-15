@@ -13,19 +13,7 @@ using LATROMI.Extensions;
 namespace teste_etiqueta
 {
     public partial class Form1 : Form
-    {
-        //var globais
-        public string titulo = "BONSUCESSO IND. TEXTIL";
-        public string produto;
-        public string codProduto;
-        public string forncedor;
-        public string documento;
-        public string operador;      
-        public string tara;
-        public string pesoBruto;
-        public string pesoLiquido;
-        public string campoObs;
-
+    {     
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +42,9 @@ namespace teste_etiqueta
 
         void printDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            //Objeto Etiqueta
+            Etiqueta etiqueta = new Etiqueta();
+
             Point pontoInicial = new Point(35, 13); //ponto no plano cartesiano onde inicia o titulo
             Point pontoBloco1 = new Point(11, 40); //produto
             Point pontoBloco2 = new Point(11, 65); //fornecedor
@@ -103,25 +94,25 @@ namespace teste_etiqueta
                 e.Graphics.DrawRectangle(blackPen, rectMinor11);
 
                 e.Graphics.DrawString(
-                titulo,
+                etiqueta.titulo,
                 font,
                 brush,
                 pontoInicial);
 
                 e.Graphics.DrawString(
-                "Produto: " + produto,
+                "Produto: " + etiqueta.produto,
                 fonteCorpoTexto,
                 brush,
                 pontoBloco1);
 
                 e.Graphics.DrawString(
-                "Fornecedor: " + "\n" + forncedor,
+                "Fornecedor: " + "\n" + etiqueta.forncedor,
                 fonteCorpoTexto,
                 brush,
                 pontoBloco2);
 
                 e.Graphics.DrawString(
-                "Documento: " + "\n" + documento,
+                "Documento: " + "\n" + etiqueta.documento,
                 fonteCorpoTexto,
                 brush,
                 pontoBloco3);
@@ -133,31 +124,31 @@ namespace teste_etiqueta
                pontoBloco4);
 
                 e.Graphics.DrawString(
-               "Operador: " + "\n" + operador,
+               "Operador: " + "\n" + etiqueta.operador,
                fonteCorpoTexto,
                brush,
                pontoBloco5);
 
                 e.Graphics.DrawString(
-               "Tara: " + "\n" + tara + " KG",
+               "Tara: " + "\n" + etiqueta.tara + " KG",
                fonteCorpoTexto,
                brush,
                pontoBloco6);
 
                 e.Graphics.DrawString(
-               "Peso Bruto: " + "\n" + pesoBruto + " KG",
+               "Peso Bruto: " + "\n" + etiqueta.pesoBruto + " KG",
                fonteCorpoTexto,
                brush,
                pontoBloco7);
 
                 e.Graphics.DrawString(
-               "Peso Liquido: " + "\n" + pesoLiquido + " KG",
+               "Peso Liquido: " + "\n" + etiqueta.pesoLiquido + " KG",
                fonteCorpoTexto,
                brush,
                pontoBloco8);
 
                 e.Graphics.DrawString(
-               "Obs: " + "\n" + campoObs,
+               "Obs: " + "\n" + etiqueta.campoObs,
                fonteCorpoTexto,
                brush,
                pontoBloco9);
