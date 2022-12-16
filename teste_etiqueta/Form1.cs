@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GenCode128;
 using System.Data.Common;
 using LATROMI.Extensions;
 
@@ -44,7 +45,7 @@ namespace teste_etiqueta
         {
             //Objeto Etiqueta
             Etiqueta etiqueta = new Etiqueta();
-
+            int altura = 1; //para altura da etiqueta
             Point pontoInicial = new Point(35, 13); //ponto no plano cartesiano onde inicia o titulo
             Point pontoBloco1 = new Point(11, 40); //produto
             Point pontoBloco2 = new Point(11, 65); //fornecedor
@@ -55,7 +56,7 @@ namespace teste_etiqueta
             Point pontoBloco7 = new Point(77, 130); //peso bruto
             Point pontoBloco8 = new Point(144, 130); //peso liquido
             Point pontoBloco9 = new Point(11, 170); //campo obs
-            Point pontoImagem = new Point(11, 13);  //ponto inicial da imagem        
+            Point pontoImagem = new Point(35, 200);  //ponto inicial da imagem        
 
             var printDocument = sender as System.Drawing.Printing.PrintDocument;
             Pen blackPen = new Pen(Color.Black, 1); //configura espessura da borda e cor
@@ -63,6 +64,8 @@ namespace teste_etiqueta
             var brush = new SolidBrush(Color.Black);
             var font = new Font("Arial", 8, FontStyle.Bold);
             //Image newImage = Image.FromFile("logo.jpg"); //carregar uma imagem
+            etiqueta.codigoBarrasCode = "089765432"; //valor setado para teste apenas
+            Image codigoBarras = Code128Rendering.MakeBarcodeImage(etiqueta.codigoBarrasCode, altura, false); //imagem gerada do codigo de barras a partir da variavel codigoBarras
 
             Rectangle rect = new Rectangle(7, 7, 205, 220); //retangulo principal ou quadrado
             Rectangle rectMinor1 = new Rectangle(10, 10, 198, 25); //retangulo do titulo
@@ -76,7 +79,7 @@ namespace teste_etiqueta
             Rectangle rectMinor9 = new Rectangle(143, 129, 64, 35); 
             Rectangle rectMinor10 = new Rectangle(10, 169, 198, 25); //esse
             Rectangle rectMinor11 = new Rectangle(10, 199, 198, 25);
-
+           
             if (printDocument != null)
             {
                 //desenha o layout                
@@ -153,7 +156,7 @@ namespace teste_etiqueta
                brush,
                pontoBloco9);
 
-               // e.Graphics.DrawImage(newImage, pontoImagem); imprime a imagem
+               e.Graphics.DrawImage(codigoBarras, pontoImagem); //imprime a imagem
             }
 
         }

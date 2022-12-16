@@ -14,3 +14,5 @@ C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\t
 C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.csproj.CopyComplete
 C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.exe
 C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\obj\Debug\teste_etiqueta.pdb
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\GenCode128.dll
+C:\Users\bruno.patrocinio\source\repos\teste_etiqueta\teste_etiqueta\bin\Debug\System.Drawing.Common.dll
